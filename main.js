@@ -36,13 +36,13 @@ controls.autoRotateSpeed = 5; // Corrected to 'autoRotateSpeed'
 
 // Load MTL and OBJ
 const mtlLoader = new MTLLoader();
-mtlLoader.load('naamloze map/ring blank sketch bear.mtl', (materials) => {
+mtlLoader.load('Ring/ring blank sketch bear.mtl', (materials) => {
   materials.preload();
 
   const objLoader = new OBJLoader();
   objLoader.setMaterials(materials);
 
-  objLoader.load('naamloze map/ring blank sketch bear.obj', (object) => {
+  objLoader.load('Ring/ring blank sketch bear.obj', (object) => {
     scene.add(object);
 
     // Optionally adjust object properties
